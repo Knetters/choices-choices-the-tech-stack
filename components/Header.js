@@ -45,7 +45,7 @@ const Header = () => {
     });
 
   return (
-    <main>
+    <div class="home-container">
         <section class="home" id="home">
             <section class="parallax">
                 <img src="img/city.png" id="city" alt="city illustratie" />
@@ -86,59 +86,59 @@ const Header = () => {
 
         <style>
             {`
-                main {
-                overflow-x: hidden;
-                overflow-y: hidden;
+                .home-container {
+                    overflow-x: hidden;
+                    overflow-y: hidden;
                 }
             
                 .home-title {
-                color: var(--darkblue);
-                font-size: 1.5rem;
-                font-weight: var(--font-medium);
-                margin-bottom: 0.5rem;
-                margin-top: -16em;
+                    color: var(--darkblue);
+                    font-size: 1.5rem;
+                    font-weight: var(--font-medium);
+                    margin-bottom: 0.5rem;
+                    margin-top: -16em;
                 }
             
                 .home-content {
-                color: var(--spat);
-                display: block;
-                font-size: 1rem;
-                font-weight: var(--font-semi-bold);
-                margin-bottom: 0.5rem;
+                    color: var(--spat);
+                    display: block;
+                    font-size: 1rem;
+                    font-weight: var(--font-semi-bold);
+                    margin-bottom: 0.5rem;
                 }
             
                 .home-scroll {
-                color: var(--green);
-                font-size: 0.8em;
-                text-decoration: none;
+                    color: var(--green);
+                    font-size: 0.8em;
+                    text-decoration: none;
                 }
             
                 /* PARALLAX */
-                .parallax2 {
-                display: none;
+                    .parallax2 {
+                    display: none;
                 }
             
                 .parallax {
-                margin-top: 6em;
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 50rem;
+                    margin-top: 6em;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50rem;
                 }
             
                 #text {
-                position: absolute;
-                margin-left: 2em;
+                    position: absolute;
+                    margin-left: 2em;
                 }
             
                 .parallax img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                pointer-events: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
                 }
             
                 @media screen and (min-width: 454px) {
@@ -330,7 +330,7 @@ const Header = () => {
             `}
         </style>
 
-    </main>
+    </div>
   );
 };
 
