@@ -4,8 +4,57 @@ import Header from "/components/Header";
 const Home = () => {
   return (
     <main>
-      <h1>My Gatsby Page</h1>
       <Header />
+
+      <style>
+        {`
+          @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
+
+          * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            scroll-behavior: smooth;
+            font-family: "Open sans", sans-serif;
+          }
+        
+          p {
+            margin-bottom: 1rem;
+            color: var(--darkblue);
+            font-size: 0.8rem;
+        
+          }
+        
+          html {
+            scroll-behavior: smooth;
+          }
+        
+          body {
+            font-family: "Poppins", serif;
+          }
+        
+          main {
+            overflow-x: hidden;
+            overflow-y: hidden;
+          }
+        
+          .button {
+            display: inline-block;
+            background-color: var(--green);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-weight: var(--font-semi-bold);
+            transition: 0.3s;
+            text-decoration: none;
+            z-index: 7;
+          }
+        
+          .button:hover {
+            background-color: var(--darkblue);
+          }
+        `}
+      </style>
     </main>
   );
 };
