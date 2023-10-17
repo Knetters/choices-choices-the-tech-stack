@@ -44,6 +44,14 @@ main {
     background-color: var(--darkblue);
 }
 
+.white-bg {
+    background-color: #fff;
+}
+
+.top-text-margin {
+    margin-top: 8rem;
+}
+
 section {
     width: 100%;
     padding-top: 5rem;
