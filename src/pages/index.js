@@ -1,12 +1,20 @@
 import * as React from "react"
 import Header from "../components/Header";
-import Navbar from "../components/Navbar";
+import Over from "../components/Over";
+import Expertise from "../components/Expertise";
+
+import Layout from "../components/Layout";
+import Klimaatadaptatie from "../components/Klimaatadaptatie";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
-      <Header />
-    </div>
+    <Layout>
+      <div>
+        <Header />
+        <Over />
+        <Expertise />
+        <Klimaatadaptatie />
+      </div>
+    </Layout>
   )
 }
