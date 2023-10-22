@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 
 import Layout from "../components/Layout";
 
@@ -11,6 +12,15 @@ import Brain from "../components/Brain";
 
 export default function Home() {
   return (
+    <div>
+
+      <Helmet>
+
+      <title>SPATwater</title>
+      <script src="/scripts/script.js" type="text/javascript" />
+
+      </Helmet>
+
     <Layout>
       <div>
         <Header />
@@ -21,5 +31,6 @@ export default function Home() {
         <Brain />
       </div>
     </Layout>
+    </div>
   )
 }
